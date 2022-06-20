@@ -88,7 +88,7 @@ header .navigation.active{
     height: 50%;
     position: fixed;
     top: 68px;
-    left: -10px;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,6 +96,11 @@ header .navigation.active{
     background: #fff;
     color: #111;
 }
+header .navigation.active li{
+    margin-left: 0;
+    padding: 10px 0;
+}
+
 
 /* MAIN SECTION */
 .banner {
@@ -215,7 +220,12 @@ section {
   .row .col50 {
     width: 100%;
   }
+  .row .col50 h2{
+    padding: 0px 0 15px;
+    line-height: 30px;
+  }
   .row .col50 .imgBx{
     min-height: 300px;
+    margin-top: 20px;
   }
 }
