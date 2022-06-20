@@ -88,7 +88,7 @@ header .navigation.active{
     height: 50%;
     position: fixed;
     top: 68px;
-    left: 0;
+    left: -10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,5 +214,8 @@ section {
   }
   .row .col50 {
     width: 100%;
+  }
+  .row .col50 .imgBx{
+    min-height: 300px;
   }
 }
