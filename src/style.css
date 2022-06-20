@@ -1,171 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@200;400;500;600;700;800&family=Roboto+Mono&family=Roboto:wght@100;400;500;700;900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;;
-    list-style-type: none;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@200;400;500;600;700;800&family=Roboto+Mono&family=Roboto:wght@100;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  scroll-behavior: smooth;
 }
-body{
-    min-height: 1000px;
+body {
+  min-height: 1000px;
 }
-p{
-    font-weight: 500;
-    color: #111;
+p {
+  font-weight: 500;
+  color: #111;
 }
-
 
 /* header */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 10000;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
 }
-header.sticky{
-    background: #fff;
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+header.sticky {
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
-header .logo{
-    font-size: 2em;
-    font-weight: 700;
+header .logo {
+  font-size: 2em;
+  font-weight: 700;
 }
-    
-header .logo a{
-    text-decoration: none;
-    color: #fff;
+
+header .logo a {
+  text-decoration: none;
+  color: #fff;
 }
-header.sticky .logo a{
-    color: #111;
+header.sticky .logo a {
+  color: #111;
 }
-header .logo a span{
-    color: #ff0157;
+header .logo a span {
+  color: #ff0157;
 }
-header .navigation{
-    display: flex;
-    position: relative;
+.menutoggle {
+  display: none;
 }
-header .navigation li{
-    list-style-type: none;
-    margin-left: 30px;
+.menutoggle .line {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 5px;
 }
-header .navigation li a{
-    text-decoration: none;
-    color: #fff;
+.menutoggle .line:nth-child(1) {
+  margin-top: 0;
 }
-header.sticky .navigation li a{
-    color: #111;
-    font-weight: 400;
+header.sticky .menutoggle .line {
+  background-color: black;
 }
-header .navigation li a:hover{
-    color: #ff0157;
+
+header .navigation {
+  display: flex;
+  position: relative;
+}
+header .navigation li {
+  list-style-type: none;
+  margin-left: 30px;
+}
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+}
+header.sticky .navigation li a {
+  color: #111;
+  font-weight: 400;
+}
+header .navigation li a:hover {
+  color: #ff0157;
 }
 
 /* MAIN SECTION */
-.banner{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(img/bg2.jpg);
+  background-size: cover;
+}
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+}
+.banner .content p {
+  color: #fff;
+  font-size: 1em;
+}
+.btn {
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+section {
+  padding: 100px;
+}
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .col50 {
+  position: relative;
+  width: 48%;
+}
+.titleTxt {
+  font-size: 2em;
+  font-weight: 400;
+  color: #111;
+}
+.titleTxt span {
+  font-weight: 700;
+  color: #ff0157;
+  font-size: 1.5em;
+}
+.row .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  /* min-height: 300px; */
+  height: 100%;
+}
+.row .col50 .imgBx img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  header .navigation {
+    display: none;
+  }
+  header {
+    padding: 25px 15px 40px;
+  }
+  header.sticky {
+    padding: 10px 12px;
+  }
+  .menutoggle {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(img/bg2.jpg);
-    background-size: cover;
-}
-.banner .content{
-    max-width: 900px;
-    text-align: center;
-}
-.banner .content h2{
-    font-size: 5em;
-    color: #fff;
-}
-.banner .content p{
-    color: #fff;
-    font-size: 1em;
-}
-.btn{
-    font-size: 1em;
-    color: #fff;
-    background: #ff0157;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
-.btn:hover{
-    letter-spacing: 6px;
-}
+  }
 
-section{
-    padding: 100px;
-}
-.row{
-    position: relative;
+  /* about us */
+  section .row {
+    flex-direction: column;
+  }
+  .row .col50 {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.row .col50{
-    position: relative;
-    width: 48%;
-}
-.titleTxt{
-    font-size: 2em;
-    font-weight: 400;
-    color: #111;
-}
-.titleTxt span{
-    font-weight: 700;
-    color: #ff0157;
-    font-size: 1.5em;
-}
-.row .col50 .imgBx{
-    position: relative;
-    width: 100%;
-    min-height: 300px;
-}
-.row .col50 .imgBx img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-
-
-
-
-@media screen and (max-width:700px) {
-    header .navigation{
-        display: none;
-    }
-    header{
-        padding: 25px 20px 40px;
-    }
-    header.sticky{
-        padding: 10px 20px;
-    }
-
-/* about us */
-    section .row{
-        flex-direction: column;
-    }
-    .row .col50{
-        width: 100%;
-    }
+  }
 }
