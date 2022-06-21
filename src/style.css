@@ -147,6 +147,9 @@ header .navigation.active li{
 section {
   padding: 100px;
 }
+.about{
+  padding: 80px 80px 50px;
+}
 .row {
   position: relative;
   width: 100%;
@@ -182,6 +185,85 @@ section {
   object-fit: cover;
 }
 
+/* gallary */
+.gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  padding-top: 70px;
+  width: 100%;
+}
+.gallery .title{
+  padding-bottom: 25px;
+  width: 50%;
+
+}
+.gallery .title h1{
+  font-size: 2.5em;
+}
+.gallery .title h1 span{
+  color: #ff0157;
+  font-weight: 700;
+}
+ 
+.gallery .content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
+  
+  
+}
+.gallery .content .column{
+  width: 32.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery .content .column img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+
+}
+.viewMorebtn {
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.viewMorebtn a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.gallery .viewMorebtn:hover {
+  letter-spacing: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 991px) {
   header,
   header.sticky {
@@ -189,7 +271,7 @@ section {
   }
 }
 
-@media screen and (max-width: 808px) {
+@media screen and (max-width: 769px) {
   header .navigation {
     display: none;
   }
@@ -227,5 +309,13 @@ section {
   .row .col50 .imgBx{
     min-height: 300px;
     margin-top: 20px;
+  }
+
+  /* gallery */
+  .gallery .content{
+    flex-direction: column;
+  }
+  .gallery .content .column{
+    width: 100%;
   }
 }
