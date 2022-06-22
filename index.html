@@ -10,7 +10,8 @@
   <body>
     <header>
       <div class="logo">
-        <a href="#">BUNTY CATERAR<span>.</span></a>
+        <!-- <a href="#">BUNTY CATERAR<span>.</span></a> -->
+        <img src="src/img/logo.png" alt="logo">
       </div>
       <div class="menutoggle" onclick="toggleMenu()">
         <div class="line"></div>
@@ -97,7 +98,31 @@
         </div>
     </section>
 
-    <section></section>
+    <!-- contact us -->
+    <section class="contact" id="contact">
+        <div class="titleCont">
+          <h1><span>C</span>ontact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non doloremque officia voluptatibus? Reiciendis voluptatibus dicta cumque delectus ex. Voluptates provident adipisci exercitationem minima, qui at ratione eos veritatis voluptas.</p>
+        </div>
+        <div class="container">
+          <h1>Send Message</h1>
+          <form action="">
+              <div class="inputBox">
+                  <input type="text" name="name" id="name" required>
+                  <span>Name</span>
+              </div>
+              <div class="inputBox">
+                  <input type="email" name="email" id="email" required>
+                  <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                  <span>Message</span>
+              </div>
+              <button>Submit</button>
+          </form>
+      </div>
+    </section>
     <script src="src/app.js"></script>
   </body>
 </html>
