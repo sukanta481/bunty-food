@@ -24,12 +24,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 40px 45px;
   z-index: 10000;
 }
 header.sticky {
   background: #fff;
-  padding: 10px 100px;
+  padding: 25px 50px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 header .logo {
@@ -38,12 +38,13 @@ header .logo {
   width: 90px;
   border-radius: 50%;
   position: relative;
-  top:0;
+  top:-45px;
   left: 0;
   z-index: 1;
 }
-header .logo.sticky{
-  top: -45px;
+header.sticky .logo{
+  top: -40px;
+  width: 77px;
 }
 header .logo img {
   position: absolute;
@@ -129,7 +130,7 @@ header .navigation.active li {
   max-width: 900px;
   text-align: center;
 }
-.banner .content h2 {
+.banner .content h1 {
   font-size: 5em;
   color: #fff;
 }
@@ -203,6 +204,8 @@ section {
 
 /* gallary */
 .gallery {
+  background: url("img/grill-fish.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -376,7 +379,14 @@ section {
 @media screen and (max-width: 991px) {
   header,
   header.sticky {
-    padding: 10px 20px;
+    padding: 18px 20px;
+  }
+  header .logo{
+    top: -22px;
+  }
+  header.sticky .logo{
+    top: -32px;
+    width: 65px;
   }
 }
 
@@ -403,7 +413,13 @@ section {
     justify-content: center;
     align-items: center;
   }
-
+/* main banner section */
+.banner{
+  padding: 80px 10px;
+}
+.banner .content h1{
+  font-size: 2em;
+}
   /* about us */
   .about {
     padding: 20px;
@@ -426,9 +442,13 @@ section {
   /* gallery */
   .gallery .content {
     flex-direction: column;
+    padding: 20px 20px 4px;
   }
   .gallery .content .column {
     width: 100%;
+  }
+  .viewMorebtn{
+    margin:0 0 50px;
   }
 
   /* contact us */
