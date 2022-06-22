@@ -38,7 +38,7 @@ header .logo {
   width: 90px;
   border-radius: 50%;
   position: relative;
-  top:-45;
+  top:0;
   left: 0;
   z-index: 1;
 }
@@ -388,7 +388,7 @@ section {
     padding: 25px 15px 40px;
   }
   header.sticky {
-    padding: 10px 12px;
+    padding: 20px 12px;
   }
   header .navigation li a {
     font-size: 1.6em;
@@ -426,5 +426,25 @@ section {
   }
   .gallery .content .column {
     width: 100%;
+  }
+
+  /* contact us */
+  .contact{
+    padding: 50px 30px;
+  }
+  .contact .titleCont h1{
+    font-size: 3.5em;
+  }
+  .contact .container{
+    padding: 75px 0;
+    margin-left: 0;
+
+  }
+  .contact .container h1{
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .contact .container form{
+    justify-content: center;
   }
 }
