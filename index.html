@@ -106,7 +106,8 @@
         </div>
         <div class="container">
           <h1><span>Send</span> Message</h1>
-          <form action="">
+          <!-- <form action="" onsubmit="sendEmail(); reset(); return false;"> -->
+            <form action="">
               <div class="inputBox">
                   <input type="text" name="name" id="name" required>
                   <span>Name</span>
@@ -126,6 +127,7 @@
     <footer>
       
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="src/app.js"></script>
   </body>
 </html>
