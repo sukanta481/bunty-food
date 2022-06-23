@@ -376,6 +376,27 @@ section {
   letter-spacing: 6px;
 }
 
+/* footer */
+footer{
+  /* background:linear-gradient(180deg,#111,#fff,#ff0157); */
+  background-color: #ff0157;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-socials{
+  display: flex;
+}
+footer .footer-socials div{
+  padding: 0 10px;
+}
+footer .reserved{
+  align-self: flex-end;
+}
+footer .reserved p{
+color: #fff;
+}
 @media screen and (max-width: 991px) {
   header,
   header.sticky {
@@ -469,5 +490,15 @@ section {
   }
   .contact .container form{
     justify-content: center;
+  }
+
+  /* footer */
+  footer{
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 7px 10px;
+  }
+  footer .reserved p{
+    font-size: 0.9em;
   }
 }
