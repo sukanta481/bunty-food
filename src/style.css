@@ -1,3 +1,4 @@
+@import url('https://fonts.maateen.me/charukola-ultra-light/font.css');
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@200;400;500;600;700;800&family=Roboto+Mono&family=Roboto:wght@100;400;500;700;900&display=swap");
 * {
   margin: 0;
@@ -133,10 +134,25 @@ header .navigation.active li {
 .banner .content h1 {
   font-size: 5em;
   color: #fff;
+  text-shadow: 1px 5px 2px black;
+}
+.banner .content h1 span{
+color: #ff0157;
+text-shadow: 1px 5px 20px white;
+
 }
 .banner .content p {
+  font-family: 'CharukolaUltraLight', sans-serif;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-shadow: 1px 5px 2px black;
+
+}
+.banner .content p span{
+  color: #ff0157;
+  text-shadow: 1px 5px 20px white;
+
 }
 .btn {
   font-size: 1em;
