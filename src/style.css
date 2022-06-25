@@ -346,8 +346,8 @@ section {
   text-transform: uppercase;
   transition: 0.5s;
 }
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span {
+.inputBox input .name:valid ~ span ,
+.inputBox input .name:focus ~ span  {
   color: #fff;
   transform: translateX(10px) translateY(-7px);
   font-size: 1rem;
@@ -369,6 +369,13 @@ section {
   border-left: 1px solid #4cc9f0;
   border-right: 1px solid #4cc9f0;
   letter-spacing: 0.2em;
+}
+
+/* form validation  */
+.inputBox input span .error-name{
+  position: absolute;
+  top: 0;
+  left: 10px;
 }
 .contact .container .submitBtn {
   font-size: 1em;
@@ -513,7 +520,11 @@ footer .reserved p {
   .footer-socials .social svg{
     width: 30px;
   }
+  footer .reserved{
+    align-self: center;
+  }
   footer .reserved p {
-    font-size: 10px;
+    font-size: 9px;
+    text-align: center;
   }
 }

@@ -99,12 +99,14 @@
           <!-- <form action="" onsubmit="sendEmail(); reset(); return false;"> -->
             <form action="mail.php" method="POST">
               <div class="inputBox">
-                  <input type="text" name="name" id="name" required>
+                  <input type="text" name="name" id="name" required class="name">
                   <span>Name</span>
+                  <span class="error-name">please enter full name</span>
               </div>
               <div class="inputBox">
                   <input type="email" name="email" id="email" required>
                   <span>Email</span>
+                  <span class="error mail">please enter correct email id</span>
               </div>
               <div class="inputBox">
                 <textarea name="message" id="message"></textarea>
@@ -146,7 +148,7 @@
         </div>
       </div>
         <div class="reserved">
-          <p>The entirety of this site is protected by copyright © 2022 <span>Sukus System</span> .</p>
+          <p>This site is protected by copyright © 2022 <span>SUKA'S SYSTEM</span> .</p>
         </div>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
