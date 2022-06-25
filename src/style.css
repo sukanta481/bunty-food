@@ -510,7 +510,10 @@ footer .reserved p {
     gap: 10px;
     padding: 25px 7px 10px;
   }
+  .footer-socials .social svg{
+    width: 30px;
+  }
   footer .reserved p {
-    font-size: 0.9em;
+    font-size: 10px;
   }
 }
