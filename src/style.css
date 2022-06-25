@@ -1,4 +1,4 @@
-@import url('https://fonts.maateen.me/charukola-ultra-light/font.css');
+@import url("https://fonts.maateen.me/charukola-ultra-light/font.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@200;400;500;600;700;800&family=Roboto+Mono&family=Roboto:wght@100;400;500;700;900&display=swap");
 * {
   margin: 0;
@@ -39,11 +39,11 @@ header .logo {
   width: 90px;
   border-radius: 50%;
   position: relative;
-  top:-45px;
+  top: -45px;
   left: 0;
   z-index: 1;
 }
-header.sticky .logo{
+header.sticky .logo {
   top: -40px;
   width: 77px;
 }
@@ -134,25 +134,22 @@ header .navigation.active li {
 .banner .content h1 {
   font-size: 5em;
   color: #fff;
-  text-shadow: 1px 5px 2px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.banner .content h1 span{
-color: #ff0157;
-text-shadow: 1px 5px 20px white;
-
+.banner .content h1 span {
+  color: #ff0157;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .banner .content p {
-  font-family: 'CharukolaUltraLight', sans-serif;
+  font-family: "CharukolaUltraLight", sans-serif;
   color: #fff;
   font-size: 1.5em;
   font-weight: 700;
-  text-shadow: 1px 5px 2px black;
-
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.banner .content p span{
+.banner .content p span {
   color: #ff0157;
-  text-shadow: 1px 5px 20px white;
-
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .btn {
   font-size: 1em;
@@ -393,7 +390,7 @@ section {
 }
 
 /* footer */
-footer{
+footer {
   /* background:linear-gradient(180deg,#111,#fff,#ff0157); */
   background-color: #ff0157;
   padding: 20px;
@@ -401,27 +398,27 @@ footer{
   display: flex;
   justify-content: space-between;
 }
-footer .footer-socials{
+footer .footer-socials {
   display: flex;
 }
-footer .footer-socials div{
+footer .footer-socials div {
   padding: 0 10px;
 }
-footer .reserved{
+footer .reserved {
   align-self: flex-end;
 }
-footer .reserved p{
-color: #fff;
+footer .reserved p {
+  color: #fff;
 }
 @media screen and (max-width: 991px) {
   header,
   header.sticky {
     padding: 18px 20px;
   }
-  header .logo{
+  header .logo {
     top: -22px;
   }
-  header.sticky .logo{
+  header.sticky .logo {
     top: -32px;
     width: 65px;
   }
@@ -441,7 +438,7 @@ color: #fff;
     font-size: 1.6em;
     color: #111;
   }
-  header .navigation.active{
+  header .navigation.active {
     top: 60px;
   }
   .menutoggle {
@@ -450,13 +447,13 @@ color: #fff;
     justify-content: center;
     align-items: center;
   }
-/* main banner section */
-.banner{
-  padding: 80px 10px;
-}
-.banner .content h1{
-  font-size: 2em;
-}
+  /* main banner section */
+  .banner {
+    padding: 80px 10px;
+  }
+  .banner .content h1 {
+    font-size: 2em;
+  }
   /* about us */
   .about {
     padding: 20px;
@@ -484,37 +481,36 @@ color: #fff;
   .gallery .content .column {
     width: 100%;
   }
-  .viewMorebtn{
-    margin:0 0 50px;
+  .viewMorebtn {
+    margin: 0 0 50px;
   }
 
   /* contact us */
-  .contact{
+  .contact {
     padding: 50px 15px;
   }
-  .contact .titleCont h1{
+  .contact .titleCont h1 {
     font-size: 3.5em;
   }
-  .contact .container{
+  .contact .container {
     padding: 55px 15px;
     margin-left: 0;
-
   }
-  .contact .container h1{
+  .contact .container h1 {
     font-size: 2.5em;
     text-align: center;
   }
-  .contact .container form{
+  .contact .container form {
     justify-content: center;
   }
 
   /* footer */
-  footer{
+  footer {
     flex-direction: column;
     gap: 10px;
     padding: 25px 7px 10px;
   }
-  footer .reserved p{
+  footer .reserved p {
     font-size: 0.9em;
   }
 }
