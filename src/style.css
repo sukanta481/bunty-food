@@ -226,6 +226,7 @@ section {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px white;
 
 
+
 }
 /* .slid {
   display: none;
@@ -352,46 +353,33 @@ section {
   border-radius: 5px;
   background: transparent;
 }
-.inputBox span {
-  padding: 10px;
+.inputBox .nameTag {
+  padding: 1px 10px;
   position: absolute;
-  left: 0;
+  left: 10px;
+  top: -12px;
   font-size: 1rem;
   pointer-events: none;
   color: grey;
   text-transform: uppercase;
-  transition: 0.5s;
-}
-.inputBox input .name:valid ~ span,
-.inputBox input .name:focus ~ span {
+  background-color: #ff0157;
   color: #fff;
-  transform: translateX(10px) translateY(-7px);
-  font-size: 1rem;
-  padding: 0 10px;
-  background: #ff0157;
-  letter-spacing: 0.2em;
 }
+
 .inputBox input:valid,
 .inputBox input:focus {
   border: 1px solid #ff0157;
 }
-.inputBox textarea:valid ~ span,
-.inputBox textarea:focus ~ span {
-  color: #fff;
-  transform: translateX(10px) translateY(-7px);
-  font-size: 1rem;
-  padding: 0 10px;
-  background: #ff0157;
-  border-left: 1px solid #4cc9f0;
-  border-right: 1px solid #4cc9f0;
-  letter-spacing: 0.2em;
-}
 
 /* form validation  */
-.inputBox input span .error-name {
-  position: absolute;
-  top: 0;
-  left: 10px;
+.inputBox .error-name,.inputBox .error-mail {
+  position: relative;
+  left: 0;
+  top: -5px;
+  font-size: 10px;
+  color: red;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .contact .container .submitBtn {
   font-size: 1em;
