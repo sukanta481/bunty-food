@@ -458,6 +458,7 @@ footer .reserved p {
   }
   header .navigation.active {
     top: 60px;
+    padding-left: 0;
   }
   .menutoggle {
     display: flex;
@@ -470,7 +471,10 @@ footer .reserved p {
     padding: 80px 10px;
   }
   .banner .content h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+  }
+  .banner .content p {
+    font-size: 1em;
   }
   /* about us */
   .about {
