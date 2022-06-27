@@ -215,6 +215,20 @@ section {
   object-fit: cover;
 }
 
+/* slid */
+#carouselExampleControls .slidImg {
+  height: 300px;
+}
+#carouselExampleControls .item{
+  font-family: "CharukolaUltraLight", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+
+}
+/* .slid {
+  display: none;
+} */
+
 /* gallary */
 .gallery {
   background: url("img/grill-fish.jpg");
@@ -346,8 +360,8 @@ section {
   text-transform: uppercase;
   transition: 0.5s;
 }
-.inputBox input .name:valid ~ span ,
-.inputBox input .name:focus ~ span  {
+.inputBox input .name:valid ~ span,
+.inputBox input .name:focus ~ span {
   color: #fff;
   transform: translateX(10px) translateY(-7px);
   font-size: 1rem;
@@ -372,7 +386,7 @@ section {
 }
 
 /* form validation  */
-.inputBox input span .error-name{
+.inputBox input span .error-name {
   position: absolute;
   top: 0;
   left: 10px;
@@ -429,6 +443,13 @@ footer .reserved p {
     top: -32px;
     width: 65px;
   }
+  /* about */
+  /* .row.col50 {
+    display: none;
+  }
+  .slid {
+    display: block;
+  } */
 }
 
 @media screen and (max-width: 769px) {
@@ -467,6 +488,7 @@ footer .reserved p {
   }
   section .row {
     flex-direction: column;
+    margin: 0;
   }
   .row .col50 {
     width: 100%;
@@ -517,10 +539,10 @@ footer .reserved p {
     gap: 10px;
     padding: 25px 7px 10px;
   }
-  .footer-socials .social svg{
+  .footer-socials .social svg {
     width: 30px;
   }
-  footer .reserved{
+  footer .reserved {
     align-self: center;
   }
   footer .reserved p {

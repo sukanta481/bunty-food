@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/7670473032.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=	"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/style.css" />
     <title>Bunty Catering Service</title>
   </head>
@@ -55,12 +56,39 @@
           </p>
         </div>
         <div class="col50">
-          <div class="imgBx">
+          <!-- <div class="imgBx">
             <img src="src/img/kabab-tandori.jpg" alt="" />
-          </div>
+          </div> -->
+          <div class="slid">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="src/img/fish-tandori.jpg" class="d-block w-100 slidImg" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="src/img/chiken-kosa.jpg" class="d-block w-100 slidImg" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="item">চিকেন কষা</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="src/img/punjabi.jpg" class="d-block w-100 slidImg" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+    
     <section class="gallery" id="gallery">
         <div class="title">
           <h1><span>Food</span> Gallery</h1>
@@ -151,6 +179,8 @@
           <p>This site is protected by copyright © 2022 <span>SUKA'S SYSTEM</span> .</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="src/app.js"></script>
   </body>
