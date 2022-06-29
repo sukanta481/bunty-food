@@ -381,6 +381,9 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
 }
+.inputBox .error-name i{
+  color: seagreen;
+}
 .contact .container .submitBtn {
   font-size: 1em;
   color: #fff;
